@@ -1,0 +1,298 @@
+<div class="innercontent clearfix">
+    <table class="subnav">
+      <tr>
+       <td class="linkout" onclick="it('view_A')" onmouseover="this.className='linkover'"
+        onmouseout="this.className='linkout'">
+        <a onclick="it('view_A')" href="javascript:">Personal<br />
+        Loans</a></td>
+       <td class="linkout" onclick="it('view_B')" onmouseover="this.className='linkover'"
+        onmouseout="this.className='linkout'">
+        <a onclick="it('view_A')" href="javascript:">Savings/<br />
+        Investments</a></td>
+       <td class="linkout" onclick="it('view_C')" onmouseover="this.className='linkover'"
+        onmouseout="this.className='linkout'">
+        <a onclick="it('view_B')" href="javascript:">NCUA<br />
+        Insurance</a></td>
+       <td class="linkout" onclick="it('view_D')" onmouseover="this.className='linkover'"
+        onmouseout="this.className='linkout'">
+        <a onclick="it('view_B')" href="javascript:">Education<br />
+        Center</a></td>
+       <td class="linkout" onclick="it('view_E')" onmouseover="this.className='linkover'"
+        onmouseout="this.className='linkout'">
+        <a onclick="it('view_B')" href="javascript:">Terms &amp; <br />
+        Conditions</a></td>
+      </tr>
+    </table>
+   
+<div id="view_A">
+		<p>We are big enough to meet all your
+          financial needs with products and services that are multi-functional. Yet
+          we're small enough to pay attention to every member. You won't have to go
+          from department to department, or suffer through endless telephone transfers,
+          to get to someone who can answer your questions or complete your transaction.
+          You know our name, but more importantly, we know yours.</p>
+        
+        <h1>Loans:</h1>
+        <br /><br />
+        <%= image_tag "computer.gif", :class=>"fright", :alt=>"" %>
+        <h1>Personal Loans</h1>
+        <p>Any way you crunch the numbers, a Signature Loan balances
+          into a great deal. You can obtain financing for items and accessories
+          you need or for anything that would satisfy your personal desires. With
+          a signature loan, no collateral is required.</p>
+          
+        <p>Click here to view our <%= link_to "LOAN RATES", rates_path %>.<br />
+          NOTE: Rates are subject to change without prior notice.<br />
+            &nbsp;</p>
+            
+        <h1>New &amp; Used Automobile Loans</h1>
+        <p><%= image_tag "camry.gif", :class=>"fright", :alt=>"" %>We
+          make your car buying experience a breeze! Finance your new or used car,
+          truck or van at your Credit Union. We offer flexible financing terms and
+          competitive rates. Also available are loans for ATVs, motorcycles, and
+          recreational vehicles.</p>
+          
+        <p>Click here to view our <%= link_to "LOAN RATES", rates_path %>.<br />
+          NOTE: Rates are subject to change without prior notice.<br />
+            &nbsp;</p>
+            
+        <h1>Share/Certificate Secured Loans</h1><%= image_tag "securedloans.gif", :class=>"fright", :alt=>"" %>
+          <p>The annual percentage rate (APR) for share secured/certificate
+          secured advances will be the dividend rate being paid on the share/certificate
+          offered as security (index) plus 3.00%. If share secured the APR is subject
+          to change quarterly to reflect the new dividend rate. If certificate secured,
+          certificates must be renewed, until completely paid. Failure to renew
+          will result in default under the Plan. When the certificate is renewed,
+          the APR is subject to change to reflect the new dividend rate. Any increase
+          in the APR will result in an increase in the payment amount or in more
+          payments of the same amount until what you owe has been repaid. For certificate
+          secured advances, the present annual percentage rate and the daily periodic
+          rate will be disclosed on the disbursement receipt at the time of advance.</p>
+          
+        <p>Click here to view our <%= link_to "LOAN RATES", rates_path(:anchor => "dividends") %>.
+          NOTE: Rates are subject to change without prior notice.</p>
+          
+        <p class="centertext"><a onclick="it('view_B')" href="javascript:"><img src="images/fraudalert.png" /></a></p>
+        <p>&nbsp;</p>
+</div>
+
+
+<div id="view_B">
+        <h2>Savings/Investments</h2>
+      
+       <h2>Share (Savings) Accounts</h2>
+       <p>Whether you just need to place a stash of cash short
+          term or you&rsquo;re looking for long-term investment vehicles, Country
+          Federal Credit Union has what you need. Upon opening an account, you
+          are automatically enrolled in IDSafeChoice Select.</p>
+      
+       <h2>Share Draft (Checking) Accounts</h2>
+       <p>A checking account from Country Federal Credit Union
+          offers you the savings and convenience you want to manage your personal
+          day-to-day finances.</p>
+      
+      <p><strong>Certificates of Deposit<br />
+          </strong>Certificates of Deposits from Country Federal Credit
+          Union are an excellent investment opportunity if you do not need immediate
+          access to your funds and want to invest for longer periods to obtain
+          high rates of return.</p>
+      
+      
+      <p><table width="90%" cellpadding="10">
+  
+          <tr>
+            <td><%= link_to image_tag("Button ADD.gif", :alt=>""), "http://www.selman.cc/creditunion/index.cfm/countryfcu", :rel => "confirm external" %></td>
+            <td></td>
+          </tr>
+        </table>
+       </p>
+</div>
+
+<div id="view_C" style="display: none;">
+        <h1>NCUA Insurance:</h1>
+      
+      <p><%= image_tag "ncuabig.gif", :alt => "" %><br />All
+          member share deposits are federally insured up to $250,000 by the National
+          Credit Union Insurance Fund (NCUSIF). In addition, IRA Accounts are
+          insured separately up to $250,000 from other accounts that a member
+          maintains in our credit union. This insurance fund is governed by the
+          National Credit Union Administration, a U.S. Government Agency.</p>
+</div>
+
+
+
+
+<div id="view_D" style="display: none;">
+        <h2>Education Center:</h2>
+        <h3>Important Information</h3>
+        <p>Country Federal Credit Union has <em>NO</em> provisions for emailing
+          any of our members for sensitive information. If you receive an email
+          that seems to be from our institution and is asking you for your account
+          number or other sensitive information, <strong>DO NOT GIVE IT</strong>!
+          Please contact us at <strong>904-259-6702</strong> so that we may investigate
+          it immediately. The security and privacy of our members are of the
+          utmost importance to us.</p>
+        <h2>Identity Theft-What You Need To Know</h2>
+            <p>Unsolicited calls to discuss using your Rewards! Points are not legitimate. Our 
+            affiliates only call members as a response to your direct contact. If you have
+            provided your information, or feel that it has been compromised, contact us 
+            immediately!</p>
+        <p>In a recent survey of 8500 consumers, results revealed that consumers have
+          a false sense of security about their identity theft vulnerability.</p>
+        <p>According to the survey, 85% of respondents believe they are taking steps
+          to protect their identities by shredding personal documents and using caution
+          when transacting business online or responding to emails requesting information.
+          And, 75% were most concerned about credit card fraud. Additionally, many
+          consumers feel secure if their credit card company has ever contacted them
+          regarding a transaction regarded as suspicious.</p>
+        <p>Yet various studies show that credit card fraud accounts for only about
+          25% of the identity theft crimes and 13 million people had their identities
+          misused in 2006.</p>
+        <p>Identity theft is defined as the use of any of your personal information &ndash; name,
+          address, social security number, driver license number, phone numbers, etc. &ndash; without
+          your permission. The United States Department of Justice states identity
+          theft and identity fraud &quot;refer to all types of crime in which someone
+          wrongfully obtains and uses another person's personal data in some way that
+          involves fraud or deception, typically for economic gain.&quot; That economic
+          gain could be by using your social security number to work, resulting in
+          erroneous wage and tax reports to the IRS. Or, the use of your personal information
+          and health insurance information to secure medical services without paying
+          for them &ndash; the collectors come after you! Or, criminals use your personal
+          information to set up utilities or sign rental contracts and then don&rsquo;t
+          pay.</p>
+        <p>It is important to take proactive measures and do all you can to safeguard
+          your personal information. Following sensible precautions like shredding
+          and being wary of emails can help reduce your risk. But no one is without
+          some risk.</p>
+        <p>Identity theft is a billion dollar business for thieves and a billion dollar
+          loss for the rest of us. As a result, recent regulation enacted by the Fair
+          and Accurate Credit Transactions Act (FACTA) requires that we put in place
+          additional measures to safeguard your account and our financial institution.</p>
+        <p><strong>Beginning July 1st, 2009, IDSafeChoice professional identity theft
+            recovery services will be added as a benefit to all personal Share accounts.</strong> An
+            associated fee of $1.95 per month will be charged to the account to offset
+            this and other additional security measures to fight identity theft and
+            fraud.</p>
+        <p>As we undertake these additional security measures to safeguard our organization,
+          we also want to add additional value to our relationship with our accountholders.
+          Therefore we have arranged for these benefits to extend to all types of identity
+          theft that you may experience &ndash; covering both financial and non-financial
+          fraud. In addition, these benefits are extended to all named accountholders
+          and 3 generations of your family &ndash; including your spouse or partner,
+          children up to 25 with the same permanent residence address, and parents
+          that either live with you or in hospice, nursing care, or assisted living.</p>
+        <p><strong>If you suspect your identity has been stolen or compromised in any
+            way, one call to Country Federal Credit Union will put you in touch with
+            a certified Identity Recovery Advocate.</strong></p>
+        <p><strong>To forfeit this benefit and forego the fee, please notify a Member
+            Service Representative. You will be asked to sign a form to verify your
+            non-participation in the Program.</strong></p>
+        <p>This is not a credit monitoring service, nor do we guarantee any funds lost
+          due to Identity Theft will be recovered. IDChoiceSafe Select service is designed
+          to restore your identity to the same status it was prior to your identity
+          being compromised.</p>
+        <p class="centertext"><%= image_tag "works.gif", :alt=>"How it Works" %></p>
+        <p>If you would like to upgrade to a bundled program that includes expense
+          reimbursement, credit monitoring, and more, please visit <%= link_to "https://countryfcu.merchantsinfo.com/", "https://countryfcu.merchantsinfo.com/" %> for
+          details.</p>
+        <p>To simply add credit monitoring to your identity theft program, visit <%= link_to "https://cfcumonitor.merchantsinfo.com/", "https://cfcumonitor.merchantsinfo.com/", :rel => "confirm external" %> for
+          additional information.</p>
+        <p>For more information of Identity Theft, <%= link_to "http://www.idtheftedu.com", "www.idtheftedu.com", :rel => "confirm external" %></p>
+        <p>Contact a Member Service Representative at (904)259-6702 if you have any
+          questions. See Terms and Conditions for further details.</p>
+        <p></p>
+        <hr />
+        <p></p>
+        <h2>Fraudulent Checks - How to Protect Yourself</h2>
+        <p>According to a secular website for the prevention of check fraud, fraudulent
+          checks were written in the amount of $20 billion in 2003, including more
+          than 500 million forged checks. Fraud is the second largest Corporate Crime
+          in America today. Financial Analysts also have predicted that the problem
+          will most likely increase 2.5% every year forward.</p>
+        <p>Those are appalling statistics, and though they are not desirable by any
+          means, they help financial institutions to realize the importance of being
+          alert when handling deposits and cashing checks. We certainly do not want
+          to fall into that constantly growing 2.5%!</p>
+        <p>Country Federal Credit Union has a number of procedures and services already
+          in place to help in defending against this nefarious crime. However, as you
+          can imagine, just as often as technology is created, criminals will find
+          ways to circumvent those innovations.<br />
+          It has come to our attention that there are some fraudulent checks that are
+          being sent out across the country that have our name and information as the
+          Drawer (or financial institution representing the check). The checks are
+          marked as &ldquo;Cashier&rsquo;s Checks&rdquo; and even have a verification
+          phone number on the front. THESE CHECKS, HOWEVER, ARE FRAUDULENT! They will
+          not be good when presented and will only result in the innocent person losing
+          money. We certainly want everyone to be wary of such checks.</p>
+        <h4>How Can I Tell That The Check I Received Is Fraudulent?</h4>
+        <p>Obviously, all of our Cashier&rsquo;s Checks are not fraudulent. Therefore,
+          there would have to be some distinguishing marks between the &ldquo;true&rdquo; checks
+          and the &ldquo;false&rdquo; checks, much like when dealing with counterfeit
+          money. Fortunately, there are some tell-tale signs that the check you received
+          is good or not. For the sake of security, we prefer not to openly post the
+          signs in this article. However, all of our employees are knowledgeable about
+          the scheme and have been alerted to the signs between the good checks and
+          the fraudulent ones. Calling our Home Branch number of (904) 259-6702 will
+          put you in touch with our employees, who will be more than happy to help
+          you. We recommend calling us, but if your circumstances prefer, we can be
+          reached via email at <%= mail_to "cfcu@countryfcu.com", "cfcu@countryfcu.com" %>.
+          Emails to our general box are answered within 24 hours during the week, or
+          first thing on Monday after a weekend. The above-mentioned article stated
+          that the average complex Check Fraud Scheme can take 18 months even to detect
+          and locate! Certainly, having an early detection like we had will help us
+          to put this organized group out of the criminal activity world. We ask for
+          your patience and thank you for your help in tackling this growing problem
+          in our nation.</p>
+        <p></p>
+        <hr />
+        <h2>&quot;Phishing&quot; Scams - The Danger</h2>
+        <p>&quot;Phishing&quot; occurs when an individual attempts to fraudulently
+          acquire information through electronic correspondence. Such individuals may
+          often times mask themselves with a seemingly official email address or screen
+          name. The scam generally involves a person being warned that his/her bank
+          account, credit card account, or other type of financial service has a problem,
+          or possibly that the
+          &quot;company&quot; needs to verify sensitive information respecting the
+          above services. Many times, the sender of the email will require that the
+          person follow an internet link to an official-looking website. However, the
+          sole purpose of any Phishing scam artist is to gain important information
+          from an individual and then use that information to access and steal funds
+          or other resources.<br />
+          <br />
+          <strong>How to Protect Yourself from Phishing Scams</strong><br />
+          <br />
+          Here are a few tips to help avoid being &quot;hooked&quot; by Phishing Scams: <br />
+        </p>
+        <ul type="disc">
+          <li>Be suspicious of any email with urgent requests for personal financial
+            information. This includes User IDs, passwords, Account or Social Security
+            Numbers, etc.</li>
+          <li>If the email seems suspicious, don't follow any links in it. Rather,
+            look up the number to the company and speak directly with a representative.</li>
+          <li>Ensure you are on a &quot;secure server&quot; before sending sensitive
+            information. At the address bar at the top, a secure server starts with
+            https:// (not just http://)</li>
+          <li>Regularly check your financial statements to make sure all of your transactions
+            are legitimate. Report any fraudulent activity.</li>
+        </ul>
+
+</div>
+
+<div id="view_E" style="display: none;">
+  <p><strong>Terms &amp; Conditions</strong></p>
+        <br />
+        <p><strong>Understanding your Account<br />
+        </strong>Click here to view the <%= link_to "Documentation", "docs/UnderstandingYourAccount.pdf", :rel => "external" %></p>
+        <p><strong>Credit Card Terms of Service<br />
+        </strong>Click here to view the <%= link_to "Documentation", "docs/CreditCardTermsofServiceAgreement.pdf", :rel => "external" %></p>
+        <p><strong>Visa Debit Card Disclosure<br />
+          </strong>Click here to view the <%= link_to "Documentation", "docs/VISADEBITCARDDISCLOSURE.pdf", :rel => "external" %><br />
+       </p>
+        <p><strong>IDSafeChoice Select Terms
+              and Conditions<br />
+          </strong>Click here to view the <%= link_to "Documentation", "docs/IDSafeChoice.pdf", :rel => "external" %><br />
+       </p>
+        
+</div>
+
+    </div>

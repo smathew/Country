@@ -1,0 +1,122 @@
+<script type="text/javascript">
+	if (AC_FL_RunContent == 0) {
+		alert("This page requires AC_RunActiveContent.js.");
+	} else {
+		AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0','name','fraud1','width','450','height','42','align','top','id','fraud1','src','fraud1','quality','high','bgcolor','#ffffff','allowscriptaccess','sameDomain','allowfullscreen','false','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','fraud1' ); //end AC code
+	}
+    </script>
+	<script type="text/javascript">
+function it(t){
+document.getElementById('view_A').style.display='none';
+document.getElementById('view_B').style.display='none';
+document.getElementById('view_C').style.display='none';
+document.getElementById('view_D').style.display='none';
+document.getElementById('view_E').style.display='none';
+document.getElementById(t).style.display='block';
+//t.style.display=(t.style.display=='block')?'none':'block';
+}
+    </script>
+
+    
+<div id="container">
+   <div id="header"> <%= link_to image_tag("topwhole.jpg", :alt=>"", :usemap=>"#Map"), root_path %>
+        <map name="Map" id="Map">
+          <area shape="rect" coords="250,249,299,274" href="/aboutus" alt="about" />
+          <area shape="rect" coords="315,255,380,281" href="/whatsnew" alt="what's new" />
+          <area shape="rect" coords="388,255,492,282" href="/prodserv" alt="products &amp; services" />
+          <area shape="rect" coords="503,256,577,282" href="/rates" alt="current rates" />
+          <area shape="rect" coords="588,257,652,281" href="/membership" alt="membership" />
+          <area shape="rect" coords="658,258,704,279" href="/contact" alt="contact" />
+          <area shape="rect" coords="714,257,749,280" href="/" alt="home" />
+          <area shape="rect" coords="19,219,205,297" href="hb_login.htm" alt="Log In" />
+        </map>
+   </div>
+
+<div id="outercontent" class="clearfix">
+          <div class="outerleft">              
+                <%= image_tag "ourlocation.gif", :alt=>"Our Locations" %>
+
+                <p><span class="arrow">Main Office</span><br />
+                  <span class="arrowsmall">602 South 6th Street</span><br />
+                  <span class="arrowsmall">Macclenny, FL&nbsp; 32063</span><br />
+                  <span class="arrowsmall">(904) 259-6702</span></p>
+      
+                <p><span class="arrow">Baldwin Office</span><br />
+                  <span class="arrowsmall">100 South Lima Street</span><br />
+                  <span class="arrowsmall">Baldwin, FL&nbsp; 32234</span><br />
+                  <span class="arrowsmall">(904) 266-1041</span></p>
+
+                <p><span class="arrow">Glen St. Mary Office</span><br />
+                  <span class="arrowsmall">6746 E Mount Vernon St, US 90</span><br />
+                  <span class="arrowsmall">Glen St. Mary, FL&nbsp; 32040</span><br />
+                  <span class="arrowsmall">(904) 259-6702</span></p>
+                  
+                <p><span class="arrow">Sanderson Office</span><br />
+                  <span class="arrowsmall">9140 CR 229</span><br />
+                  <span class="arrowsmall">Sanderson, FL 32087</span><br />
+                  <span class="arrowsmall">(904)259-6702</span></p>
+                  
+              <%= image_tag "helpfullinks.gif", :alt=>"Helpful Links" %><br />
+                
+                  <table class="sponsors">
+                    <tr>
+                      <td><%= link_to image_tag("carfax.gif", :alt=>""), "http://www.carfax.com", :rel => "external" %>
+                      <br />
+                        Vehicle History Reports Online</td>
+                    </tr>
+                    <tr>
+                      <td><%= link_to image_tag("libertychecks.gif", :alt=>""), "https://reorder.libertysite.com/login.asp", :confirm => "Country Federal CU does not control this site or its privacy practices and makes no warranty for its contents, products and services.", :rel => "confirm external" %><br />
+                        Order your Personal Checks</td>
+                    </tr>
+                    <tr>
+                      <td><%= link_to image_tag("Credit%20Card%20Link.JPG", :alt=>""), "http://www.MyCompleteCardSolution.com", :rel => "confirm external" %><br />My Complete Card Solution </td>
+                    </tr>
+                    <tr>
+                      <td><%= link_to image_tag("idtheft.gif", :alt=>""), "http://www.consumer.gov/idtheft/index.html", :rel => "confirm external" %><br />
+                        ID Theft Information</td>
+                    </tr>
+                    <tr>
+                      <td><%= link_to image_tag("CFU_button.gif", :alt=>"CFU", :width=>145, :height=>81), "http://duvaldealers.com/specialmembers/", :rel => "confirm external" %><br />
+Duval Dealers</td>
+                    </tr>
+                    <tr>
+                      <td><%= link_to image_tag("NADAmasthead.JPG", :alt=>""), "http://www.nadaguides.com/home.aspx?l=1&amp;w=28&amp;p=0&amp;f=5000&amp;aid=80698&amp;iid=58778&amp;nozip=1", :rel => "external" %><br />
+                        NADA Guides</td>
+                    </tr>
+                    <tr>
+                      <td><%= link_to image_tag("rewards.JPG", :alt=>""), "https://www.dreampoints.com/ftps", :rel => "external" %><br />Visa Rewards Program</td>
+                    </tr>
+                    <tr>
+                      <td><%= link_to image_tag("visa_verify.gif", :alt=>""), "http://www.verifiedbyvisa.com", :rel => "external" %></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <%= image_tag "prescription.JPG", :alt=>"Free Prescription Drug Card" %><br />
+                        Free Prescription Card</td>
+                    </tr>
+                    <tr>
+                        <td><%= link_to image_tag("newsletter.jpg", :alt=>"Newsletter"), "pdf/newsletter.pdf", :rel => "external" %>
+                        <br />Our Newsletter</td>
+                    </tr>
+                    <tr>
+                        <td><%= link_to image_tag("calculators.jpg", :alt=>"Online Calculators"), href="http://www.culookup.com/calculators", :rel => "external" %><br />
+                        Financial Calculators</td>
+                    </tr>
+                    <tr>
+                        <td><%= link_to image_tag("federalreserve.jpg", :alt=>"Newsletter"), "pdf/newsletter.pdf", :rel => "external" %><br />
+                        What you need to know about Credit Cards</td>
+                    </tr>
+                    <tr>
+                        <td><%= link_to image_tag("overdraft_icon.jpg",  :alt=>"Newsletter"), "pdf/newsletter.pdf", :rel => "external" %><br />
+                        What you need to know about Overdrafts</td>
+                    </tr>
+                    <tr>
+                        <td><%= link_to image_tag("estatements.jpg", :alt=>"Newsletter"), "https://clientadmin.digitalmailer.com/clientfiles/198/login.asp", :rel => "external" %><br />e-Statements</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                  </table>
+              
+</div>
+      <div id="outerright" class="clearfix"> 
